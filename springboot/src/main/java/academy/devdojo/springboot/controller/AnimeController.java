@@ -28,7 +28,7 @@ public class AnimeController {
     }
 
     // Equivalente: localhost:8080/anime/list
-    //@RequestMapping(method = RequestMethod.GET, path = "list") // Exite uma forma melhor de se fazer.
+    //@RequestMapping(method = RequestMethod.GET, path = "list") // Existe uma forma melhor de se fazer.
     @GetMapping(path = "list") // Forma melhor de se fazer.
     public List<Anime> list(){
         log.info(dateUtil.formatLocalDateTimeToDatabaseStyle(LocalDateTime.now()));
